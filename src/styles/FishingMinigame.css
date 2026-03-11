@@ -1,0 +1,142 @@
+.fishing-minigame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+}
+
+.fishing-container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 600px;
+  border: 3px solid #4CAF50;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+.fishing-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.message {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #ffeb3b;
+  font-weight: bold;
+  min-height: 30px;
+}
+
+.animation {
+  padding: 40px;
+  font-size: 3em;
+}
+
+.casting-animation,
+.waiting-animation {
+  font-size: 4em;
+  animation: bounce 1s infinite;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.hooking-section {
+  padding: 30px 0;
+}
+
+.timer {
+  font-size: 1.5em;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hook-bar {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 2px solid #666;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.target-zone {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  background: rgba(76, 175, 80, 0.3);
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+.hook-indicator {
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background: #ffeb3b;
+  top: 0;
+  box-shadow: 0 0 10px rgba(255, 235, 59, 0.8);
+  transition: left 0.05s linear;
+}
+
+.instruction {
+  font-size: 1.1em;
+  color: #aaa;
+}
+
+.result {
+  padding: 40px 20px;
+}
+
+.success,
+.failure {
+  margin-bottom: 30px;
+}
+
+.celebration,
+.sad {
+  font-size: 5em;
+  margin-bottom: 20px;
+  animation: bounce 0.6s infinite;
+}
+
+.success h3 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin: 20px 0;
+}
+
+.success .value {
+  font-size: 1.5em;
+  color: #ffeb3b;
+}
+
+.failure p {
+  font-size: 1.5em;
+  color: #ff6b6b;
+}
+
+.continue-btn {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.continue-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}

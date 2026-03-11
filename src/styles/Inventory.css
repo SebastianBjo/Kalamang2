@@ -1,0 +1,71 @@
+.inventory {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inventory h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.1em;
+  padding: 40px;
+}
+
+.fish-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fish-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+}
+
+.fish-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.fish-value {
+  color: #ffeb3b;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.inventory-footer {
+  text-align: center;
+}
+
+.total {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #ffeb3b;
+}
+
+.sell-btn {
+  padding: 12px 30px;
+  font-size: 1.1em;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sell-btn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}

@@ -1,17 +1,6 @@
 .App {
-  text-align: center;
-  padding: 2rem;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  background: #fff;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #f0f0f0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
